@@ -20,15 +20,16 @@ Product.init(
       type: DataTypes.STRING,
       allowNull: true
     },
-    price: {
+    price: { // For some reason the price returns as a full number
       type: DataTypes.DECIMAL,
       allowNull: false,
       validate: {
+        // is: /^\d+(\.\d{1,2})?$/
         isDecimal: true
       }
     },
     stock: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 10,
       validate: {
