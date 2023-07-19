@@ -21,11 +21,11 @@ Product.init(
       allowNull: true
     },
     price: { // For some reason the price returns as a full number
-      type: DataTypes.DECIMAL,
+      type: DataTypes.FLOAT,
       allowNull: false,
       validate: {
         // is: /^\d+(\.\d{1,2})?$/
-        isDecimal: true
+        isFloat: true
       }
     },
     stock: {

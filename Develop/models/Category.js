@@ -1,3 +1,4 @@
+// Creates a 'category' table and it's columns
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');

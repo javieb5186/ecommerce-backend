@@ -1,3 +1,5 @@
+// Creates a 'product_tag' table and it's columns
+
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection');
