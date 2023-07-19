@@ -1,3 +1,4 @@
+// Creates a 'tag' table and it's columns
 const { Model, DataTypes, STRING } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
